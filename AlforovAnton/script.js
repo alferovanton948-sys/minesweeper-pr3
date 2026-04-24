@@ -271,3 +271,4 @@ function resetGame() {
 restartButton.addEventListener('click', resetGame);
 
 resetGame();
+console.log("lab3 done")
