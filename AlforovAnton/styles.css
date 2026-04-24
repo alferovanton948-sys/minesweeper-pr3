@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #202124;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.game {
+  text-align: center;
+}
+
+.panel {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 8px 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #43a047;
+}
+
+.message {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.field {
+  display: grid;
+  grid-template-columns: repeat(10, 36px);
+  gap: 3px;
+  justify-content: center;
+}
+
+.cell {
+  width: 36px;
+  height: 36px;
+  background: #777;
+  border: 2px solid #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.cell.closed:hover {
+  background: #888;
+}
+
+.cell.opened {
+  background: #d6d6d6;
+  color: #111;
+  cursor: default;
+  border: 2px solid #bbb;
+}
+
+.cell.flagged {
+  background: #ffc107;
+}
+
+.cell.mine {
+  background: #e53935;
+  color: white;
+}
